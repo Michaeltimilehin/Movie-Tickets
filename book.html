@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="css/booking.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+     <section class="booking-container">
+        <h2>Book Your Movie Ticket</h2>
+        <div id="booking-form">
+            <label for="movieSelect">Select Movie:</label>
+            <select id="movieSelect" required>
+              <option value="">Movies</option>
+            </select>
+
+            <label for="seatNumber">Seat Number:</label>
+            <input type="text" id="seatNumber" placeholder="Enter seat number" required>
+
+            <label for="showtimeSelect">Select Showtime:</label>
+            <select id="showtimeSelect" required>
+                <!-- Showtimes will be populated here -->
+            </select>
+
+            <button id="book-ticket" class="btn-primary">Book Ticket</button>
+        </div>
+
+        <div id="ticket-details" class="ticket-details">
+            <!-- Ticket details will be displayed here -->
+        </div>
+
+        <button id="delete-ticket" class="btn-secondary" style="display:none;">Delete Ticket</button>
+    </section>
+
+    <script src="js/scripts.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
