@@ -75,6 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
   FAQModule.init();
 });
 
+
+
+
 // JavaScript for handling the booking process
 
 // Movie class representing each movie
