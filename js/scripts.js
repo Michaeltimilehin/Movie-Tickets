@@ -28,7 +28,7 @@ const SearchModule = {
     });
 
     if (!found) {
-      alert('No movies or theaters found.');
+      alert('No movies or  found.');
     }
   }
 };
@@ -53,20 +53,20 @@ const SmoothScrollModule = {
 };
 
 // FAQ Module
-const FAQModule = {
-  init: function() {
-    this.faqItems = document.querySelectorAll('.faq-item h3');
-    this.bindEvents();
-  },
-  bindEvents: function() {
-    this.faqItems.forEach(item => {
-      item.addEventListener('click', this.toggleFAQ.bind(this, item));
-    });
-  },
-  toggleFAQ: function(item) {
-    item.nextElementSibling.classList.toggle('active');
-  }
-};
+// const FAQModule = {
+//   init: function() {
+//     this.faqItems = document.querySelectorAll('.faq-item h3');
+//     this.bindEvents();
+//   },
+//   bindEvents: function() {
+//     this.faqItems.forEach(item => {
+//       item.addEventListener('click', this.toggleFAQ.bind(this, item));
+//     });
+//   },
+//   toggleFAQ: function(item) {
+//     item.nextElementSibling.classList.toggle('active');
+//   }
+// };
 
 // Initialize Modules
 document.addEventListener('DOMContentLoaded', function() {
@@ -100,7 +100,7 @@ class MovieTicket {
           <p><strong>Movie:</strong> ${this.movie.title}</p>
           <p><strong>Seat:</strong> ${this.seatNumber}</p>
           <p><strong>Showtime:</strong> ${this.showtime}</p>
-          <p><strong>Price:</strong> $${this.movie.price}</p>
+          <p><strong>Price:</strong> N${this.movie.price}</p>
       `;
   }
 
@@ -112,14 +112,14 @@ class MovieTicket {
 
 // Array of movies
 const movies = [
-  new Movie('Alien', 5000, ['12:00 PM', '3:00 PM', '6:00 PM']),
-  new Movie('Madame Web', 5000, ['1:00 PM', '4:00 PM', '7:00 PM']),
-  new Movie('The Challengers', 5000, ['11:00 AM', '2:00 PM', '5:00 PM']),
-  new Movie('Despicable Me 4',   5000, ['10:00 AM', '1:00 PM', '4:00 PM']),
-  new Movie('Fly me to the moon',   5000, ['12:00 AM', '3:00 PM', '6:00 PM']),
-  new Movie('The Union',   5000, ['10:00 AM', '1:00 PM', '4:00 PM']),
-  new Movie('Trap',   5000, ['10:00 AM', '2:00 PM', '6:00 PM']),
-  new Movie('Damsel',   5000, ['9:00 AM', '1:30 PM', '5:00 PM']),
+  new Movie('Alien', 10000, ['12:00 PM', '3:00 PM', '6:00 PM']),
+  new Movie('Madame Web', 7000, ['1:00 PM', '4:00 PM', '7:00 PM']),
+  new Movie('The Challengers', 8500, ['11:00 AM', '2:00 PM', '5:00 PM']),
+  new Movie('Despicable Me 4',   12000, ['10:00 AM', '1:00 PM', '4:00 PM']),
+  new Movie('Fly me to the moon',   8000, ['12:00 AM', '3:00 PM', '6:00 PM']),
+  new Movie('The Union',   7500, ['10:00 AM', '1:00 PM', '4:00 PM']),
+  new Movie('Trap',   10000, ['10:00 AM', '2:00 PM', '6:00 PM']),
+  new Movie('Damsel',   6000, ['9:00 AM', '1:30 PM', '5:00 PM'])
 ];
 
 // DOM elements
